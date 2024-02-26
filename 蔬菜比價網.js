@@ -110,11 +110,21 @@ search.addEventListener("click",function(e){
 sortSelect.addEventListener("change",function(e){
     if(e.target.value != '排序篩選'){
     let sortTxt = e.target.value.replace("依","").replace('排序',"").trim()
-    let filterData = dataSet.sort(function(a,b){
+    if(filterData.length == 0){
+        filterData = dataSet.sort(function(a,b){
         return  b[sortTxt] - a[sortTxt]
     })
     renderList(filterData)
+    }else{
+        filterData = filterData.sort(function(a,b){
+        return  b[sortTxt] - a[sortTxt]
+    })
+    renderList(filterData)
+    
     }
+}
+    
+    
     
 })
 
