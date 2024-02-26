@@ -1,8 +1,3 @@
-// 6. 蔬菜比價網：串接 API 顯示資料
-// 7. 蔬菜比價網：可以篩選『蔬菜』、『水果』、『花卉』三個類別
-// 8. 蔬菜比價網：可以搜尋作物名稱，並顯示當前搜尋的字詞和結果
-// 9. 蔬菜比價網：可以排序篩選、點擊表頭中的上下 icon 可以跟著排序（參考設計稿第五頁）
-
 const showlist = document.querySelector('.showList')
 const btnGroup =document.querySelector('.button-group')
 const search = document.querySelector('.search')
