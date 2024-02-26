@@ -1,4 +1,4 @@
-<style>*,
+*,
 *::before,
 *::after {
     box-sizing: border-box;
@@ -21,6 +21,7 @@ body {
     color: #2a2a2a;
     letter-spacing: 1px;
     white-space: nowrap;
+    background-attachment: fixed;
 }
 
 .wrap {
